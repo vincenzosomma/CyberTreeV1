@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_launcher_background"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".SignInActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_sign_up_activity"
+        android:id="@+id/toolbar_sign_in_activity"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
         <ImageView
@@ -31,13 +31,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tv_title_sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
             android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
             android:fontFamily="@font/roboto_mono_bold"
-            android:text="@string/sign_up"
+            android:text="@string/sign_in"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/toolbar_title_text_size" />
 
@@ -48,7 +48,7 @@
             android:layout_marginTop="@dimen/authentication_screen_card_view_marginTop"
             android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
             android:elevation="@dimen/card_view_elevation"
-            android:outlineAmbientShadowColor="@color/colorLightBlue"
+            android:outlineAmbientShadowColor="@color/colorWhite"
             app:cardBackgroundColor="@color/colorBlueDark"
             app:cardCornerRadius="@dimen/card_view_corner_radius">
 
@@ -58,24 +58,6 @@
                 android:orientation="vertical"
                 android:padding="@dimen/card_view_layout_content_padding">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
-
-                    <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/et_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_border_shape_button_rounded"
-                        android:hint="@string/name"
-                        android:inputType="textEmailAddress"
-                        android:padding="10dp"
-                        android:textColor="@color/colorWhite"
-                        android:textColorHint="@color/colorLightBlue"
-                        android:textSize="@dimen/et_text_size" />
-                </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -85,7 +67,7 @@
                     android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
 
                     <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/et_email"
+                        android:id="@+id/et_email_sign_in"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/white_border_shape_button_rounded"
@@ -105,7 +87,7 @@
                     android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
 
                     <androidx.appcompat.widget.AppCompatEditText
-                        android:id="@+id/et_password"
+                        android:id="@+id/et_password_sign_in"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/white_border_shape_button_rounded"
@@ -117,20 +99,8 @@
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <Switch
-                    android:id="@+id/switch1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/btn_marginStartEnd"
-                    android:layout_marginTop="10sp"
-                    android:layout_marginEnd="@dimen/btn_marginStartEnd"
-                    android:padding="15dp"
-                    android:text="@string/terms_and_conditions"
-                    android:textColor="@color/colorWhite"
-                    tools:ignore="UseSwitchCompatOrMaterialXml" />
-
                 <Button
-                    android:id="@+id/btn_sign_up"
+                    android:id="@+id/btn_sign_in"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -142,7 +112,7 @@
                     android:gravity="center"
                     android:paddingTop="@dimen/btn_paddingTopBottom"
                     android:paddingBottom="@dimen/btn_paddingTopBottom"
-                    android:text="@string/sign_up"
+                    android:text="@string/sign_in"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/btn_text_size" />
             </LinearLayout>

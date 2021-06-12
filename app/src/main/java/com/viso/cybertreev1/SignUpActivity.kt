@@ -18,5 +18,6 @@ class SignUpActivity : AppCompatActivity() {
              actionBar.setDisplayHomeAsUpEnabled(true)
              actionBar.setHomeAsUpIndicator(R.drawable.ic_back)
          }
+         toolbar_sign_up_activity.setNavigationOnClickListener {onBackPressed()}
     }
 }
