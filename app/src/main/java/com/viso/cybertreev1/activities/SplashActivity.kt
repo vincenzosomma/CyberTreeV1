@@ -1,10 +1,11 @@
-package com.viso.cybertreev1
+package com.viso.cybertreev1.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.viso.cybertreev1.R
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {

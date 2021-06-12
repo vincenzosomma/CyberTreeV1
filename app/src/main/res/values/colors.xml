@@ -10,6 +10,7 @@
     <!--TODO (Step 7: Add the color values here.)-->
     <!--START-->
     <color name="primary_text_color">#F54B64</color>
+    <color name="snackbar_error_color">#F54B64</color>
     <color name="secondary_text_color">#FF0025</color>
     <!--END-->
 </resources>

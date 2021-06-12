@@ -1,14 +1,15 @@
-package com.viso.cybertreev1
+package com.viso.cybertreev1.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import com.viso.cybertreev1.R
 import kotlinx.android.synthetic.main.activity_intro.*
 
 // TODO (Step 1: Add the Intro Activity.)
 // START
-class IntroActivity : AppCompatActivity() {
+class IntroActivity : BaseActivity() {
 
     /**
      * This function is auto created by Android when the Activity Class is created.

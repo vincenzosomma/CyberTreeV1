@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199836191008",
+    "project_id": "cybertree-v1",
+    "storage_bucket": "cybertree-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199836191008:android:e8eaa263528f0b8b4cef45",
+        "android_client_info": {
+          "package_name": "com.viso.cybertreev1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199836191008-s28i9pub3v9dl82pumqmggopisppbsbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCyXPzAGBFS5BgOBU6MHfWDY-p3FA-yGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199836191008-s28i9pub3v9dl82pumqmggopisppbsbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

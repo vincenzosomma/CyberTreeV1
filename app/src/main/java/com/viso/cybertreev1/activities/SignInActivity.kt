@@ -1,7 +1,8 @@
-package com.viso.cybertreev1
+package com.viso.cybertreev1.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.viso.cybertreev1.R
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
 class SignInActivity : AppCompatActivity() {
