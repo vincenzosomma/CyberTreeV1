@@ -2,7 +2,6 @@ package com.viso.cybertreev1.activities
 
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import android.widget.Switch
 import android.widget.Toast
@@ -23,11 +22,20 @@ class SignUpActivity : BaseActivity() {
 
         setupActionBar()
 
-        // Click event for sign-up button.
-        btn_sign_up.setOnClickListener{
-            registerUser()
+
+        val sw: Switch = findViewById<View>(R.id.switch1) as Switch
+
+        // Click event for sign-up button and check for term and condition
+        btn_sign_up.setOnClickListener {
+            if (sw.isChecked){
+                registerUser()
+            }else{
+                showErrorSnackBar("Please accept terms and condition to continue.")
+            }
         }
+
     }
+
 
     /**
      * A function for actionBar Setup.
@@ -45,43 +53,40 @@ class SignUpActivity : BaseActivity() {
         toolbar_sign_up_activity.setNavigationOnClickListener { onBackPressed() }
     }
 
-    // TODO (Step 9: A function to register a new user to the app.)
-    // START
+
     /**
      * A function to register a user to our app using the Firebase.
      * For more details visit: https://firebase.google.com/docs/auth/android/custom-auth
      */
-    private fun registerUser(){
+    private fun registerUser() {
         val name: String = et_name.text.toString().trim { it <= ' ' }
         val email: String = et_email.text.toString().trim { it <= ' ' }
         val password: String = et_password.text.toString().trim { it <= ' ' }
         val confirmPassword: String = et_password_confirm.text.toString().trim { it <= ' ' }
 
-        if (password == confirmPassword){
-            if (validateForm(name, email, password, confirmPassword)) {
 
+
+        if (validateForm(name, email, password, confirmPassword)) {
+                if (password == confirmPassword) {
                 Toast.makeText(
                     this@SignUpActivity,
                     "Now we can register a new user.",
                     Toast.LENGTH_SHORT
                 ).show()
-            }
-       }else{
-            showErrorSnackBar("Passwords do not match, please enter the password.")
-          /*  Toast.makeText(
-                this@SignUpActivity,
-                "Passwords do not match, please enter the password.",
-                Toast.LENGTH_SHORT
-            ).show()*/
+
+            }else {
+                    showErrorSnackBar("Passwords do not match, please enter the password.")
+        }
+        }else {
+            showErrorSnackBar("Please fill all the form.")
         }
     }
-    // END
-
 
     /**
      * A function to validate the entries of a new user.
      */
     private fun validateForm(name: String, email: String, password: String, confirmPassword: String): Boolean {
+
         return when {
             TextUtils.isEmpty(name) -> {
                 showErrorSnackBar("Please enter name.")
