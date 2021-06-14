@@ -4,10 +4,10 @@
     android:shape="rectangle">
 
      <gradient
-          android:angle="180"
+          android:angle="50"
           android:endColor="@color/colorLightBlue"
-          android:startColor="@color/colorWhite"
-          android:type="linear"/>
+          android:startColor="@color/colorBlueDark"
+          android:type="radial"/>
 
    <!--    <corners android:radius="10dp" />
     <stroke android:color="@color/colorLightBlue"

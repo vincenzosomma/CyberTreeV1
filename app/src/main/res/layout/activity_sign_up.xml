@@ -13,6 +13,7 @@
         android:id="@+id/toolbar_sign_up_activity"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="55sp"
@@ -50,7 +51,9 @@
             android:elevation="@dimen/card_view_elevation"
             android:outlineAmbientShadowColor="@color/colorLightBlue"
             app:cardBackgroundColor="@color/colorBlueDark"
-            app:cardCornerRadius="@dimen/card_view_corner_radius">
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="6sp"
+            app:cardMaxElevation="8sp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,7 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:textColorHint="@color/colorLightBlue">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/et_name"
@@ -82,7 +86,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
                     android:layout_marginTop="@dimen/authentication_screen_til_marginTop"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:textColorHint="@color/colorLightBlue">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/et_email"
@@ -102,7 +107,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
                     android:layout_marginTop="@dimen/authentication_screen_til_marginTop"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:textColorHint="@color/colorLightBlue">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/et_password"
@@ -116,12 +122,14 @@
                         android:textColorHint="@color/colorLightBlue"
                         android:textSize="16sp" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/authentication_screen_til_marginStartEnd"
                     android:layout_marginTop="@dimen/authentication_screen_til_marginTop"
-                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd">
+                    android:layout_marginEnd="@dimen/authentication_screen_til_marginStartEnd"
+                    android:textColorHint="@color/colorLightBlue">
 
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/et_password_confirm"
@@ -146,6 +154,7 @@
                     android:padding="15dp"
                     android:text="@string/terms_and_conditions"
                     android:textColor="@color/colorWhite"
+                    android:textColorLink="@color/colorWhite"
                     android:textOff="OFF"
                     android:textOn="ON"
                     tools:ignore="UseSwitchCompatOrMaterialXml" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--TODO (Step 4: Design the intro screen layout as per our requirement.)-->
+<!--TODO (Design the intro screen layout as per our requirement.)-->
 <!--START-->
 <!--The values for the drawable items, dimen, string and color values are added in their respective folders and files.-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
